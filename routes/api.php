@@ -26,3 +26,6 @@ Route::post('exercicio/seis',
 
 Route::post('exercicio/oito', 
 [ExercicioOitoController::class, 'Tabuada']);
+
+Route::post('exercicio/nove', 
+[ExercicioNoveController::class, 'divisivel']);
