@@ -23,3 +23,6 @@ Route::post('exercicio/cinco',
 
 Route::post('exercicio/seis', 
 [ExercicioSeisController::class, 'doadorSangue']);
+
+Route::post('exercicio/oito', 
+[ExercicioOitoController::class, 'Tabuada']);
