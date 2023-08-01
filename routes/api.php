@@ -14,3 +14,6 @@ Route::get('exercicio/sete',
 
 Route::post('exercicio/quatro', 
 [ExercicioQuatroController::class, 'verificarNumero']);
+
+Route::post('exercicio/tres', 
+[ExercicioTresController::class, 'media']);
