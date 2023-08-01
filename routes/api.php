@@ -11,3 +11,6 @@ Route::post('exercicio/dois',
 
 Route::get('exercicio/sete', 
 [ExercicioSeteController::class, 'exibirNumeros']);
+
+Route::post('exercicio/quatro', 
+[ExercicioQuatroController::class, 'verificarNumero']);
