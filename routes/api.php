@@ -8,3 +8,6 @@ Route::post('exercicio/um',
 
 Route::post('exercicio/dois', 
 [ExercicioDoisController::class, 'retornarMaior']);
+
+Route::get('exercicio/sete', 
+[ExercicioSeteController::class, 'exibirNumeros']);
