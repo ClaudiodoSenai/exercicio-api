@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ExercicioNoveRequest;
 use Illuminate\Http\Request;
 
-class ExercicioNoveController extends Controller
+class ExercicioTrezeController extends Controller
 {
-    public function divisivel(ExercicioNoveRequest $request)
+    public function divisivel(Request $request)
     {
         $numeros = [];
 

@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioCincoRequest;
 use Illuminate\Http\Request;
 
 class ExercicioCincoController extends Controller
 {
-    public function exercicioCinco(Request $request)
+    public function exercicioCinco( ExercicioCincoRequest $request)
     {
         if ($request->numero % 4 == 0) {
             return json_encode([

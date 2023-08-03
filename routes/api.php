@@ -1,5 +1,15 @@
 <?php
 
+use App\Http\Controllers\ExercicioCincoController;
+use App\Http\Controllers\ExercicioDezController;
+use App\Http\Controllers\ExercicioDoisController;
+use App\Http\Controllers\ExercicioDozeController;
+use App\Http\Controllers\ExercicioNoveController;
+use App\Http\Controllers\ExercicioOitoController;
+use App\Http\Controllers\ExercicioQuatroController;
+use App\Http\Controllers\ExercicioSeisController;
+use App\Http\Controllers\ExercicioSeteController;
+use App\Http\Controllers\ExercicioTresController;
 use App\Http\Controllers\ExercicioUmController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,3 +40,9 @@ Route::post('exercicio/oito',
 
 Route::post('exercicio/nove', 
 [ExercicioNoveController::class, 'divisivel']);
+
+Route::get('exercicio/dez', 
+[ExercicioDezController::class, 'mostrarNumeros']);
+
+Route::get('exercicio/doze', 
+[ExercicioDozeController::class, 'exibirNoventa']);

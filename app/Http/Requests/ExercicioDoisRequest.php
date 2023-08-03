@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class ExercicioUmFormRequest extends FormRequest
+class ExercicioDoisRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class ExercicioUmFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'primeiro_numero' => 'required|numeric' ,
-            'segundo_numero' => 'required|numeric',
+            'primeira_entrada' => 'required|numeric' ,
+            'segunda_entrada' => 'required|numeric',
         ];
     }
 
@@ -38,13 +38,15 @@ class ExercicioUmFormRequest extends FormRequest
             ])
         );
     }
+
     public function messages()
     {
         return [
-            'primeiro_numero.required' => 'Preencha o campo primeiro numero',
-            'primeiro_numero.numeric' => 'O campo é somente numeros',
-            'segundo_numero.required' => 'Preencha o campo primeiro numero',
-            'segundo_numero.numeric' => 'O campo é somente numeros',
+            'primeira_entrada.required' => 'Preencha o campo primeira entrada',
+            'primeira_entrada.numeric' => 'O campo é somente numeros',
+            'segunda_entrada.required' => 'Preencha o campo segunda entrada',
+            'segunda_entrada.numeric' => 'O campo é somente numeros',
+            
         ];
     }
 }
